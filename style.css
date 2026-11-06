@@ -117,3 +117,25 @@ html {scroll-padding-top:0}
  .hero-copy,.hero-visual{display:none}
  .hero-hotspot{display:block;position:absolute;left:5.6%;top:61%;width:25.5%;height:9%;border-radius:50px;z-index:2}
 }
+
+/* LUMIÈRE — approved portrait cards; hero and other sections untouched */
+.master-card{padding:0;min-height:0;overflow:hidden;justify-content:flex-start}
+.master-photo{display:block;width:100%;height:clamp(230px,26vw,340px);object-fit:cover;object-position:center 25%}
+.master-card .master-mark{margin:20px 24px 0}
+.master-card h3{margin:12px 24px 7px}
+.master-card p{margin:0 24px 26px}
+@media(max-width:800px){.master-photo{height:clamp(270px,75vw,420px)}.master-card{min-height:0}}
+
+/* Portfolio polish: compact contacts and booking, without altering approved hero */
+.contacts-section{min-height:0;padding-top:clamp(34px,5vh,58px);padding-bottom:clamp(34px,5vh,58px)}
+.contacts-section .section-intro{margin-bottom:24px}
+.contacts-section .section-intro h2{margin:8px 0 12px}
+.contacts-section .contact-note{padding:20px 28px;max-width:760px}
+.booking-section{min-height:0;padding-top:clamp(42px,6vh,70px);padding-bottom:clamp(42px,6vh,70px)}
+.booking-section .section-intro{margin-bottom:28px}
+@media(max-width:800px){
+ .contacts-section{padding:42px 22px}
+ .contacts-section .section-intro{margin-bottom:20px}
+ .contacts-section .contact-note{padding:18px 20px}
+ .booking-section{padding:48px 22px}
+}
