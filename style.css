@@ -152,3 +152,8 @@ html {scroll-padding-top:0}
  .hero-bottom{display:none}
  .hero-visual,.hero-hotspot{display:none}
 }
+
+/* Remove light strips embedded at the left edge of portraits 02 and 03. */
+.master-photo-frame{height:clamp(230px,26vw,340px);width:100%;overflow:hidden}
+.master-photo-frame .master-photo{width:100%;height:100%;object-fit:cover;object-position:center 25%;transform:scale(1.13);transform-origin:right center}
+@media(max-width:800px){.master-photo-frame{height:clamp(270px,75vw,420px)}}
